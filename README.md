@@ -2,6 +2,7 @@
 
 ### Requirements
 [Docker for Mac](https://docs.docker.com/engine/installation/mac/)
+
 [Docker for Mac Beta](https://download.docker.com/mac/beta/Docker.dmg)
 
 ### Create a new Rails Project with Docker
