@@ -4,7 +4,7 @@
 [Docker for Mac](https://docs.docker.com/engine/installation/mac/)
 
 ### Create a new Rails Project with Docker
-1. Setup an initial Docker file
+1. Setup an initial ```Dockerfile```
   ```
   FROM ruby:2.2.0
   RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
@@ -16,13 +16,13 @@
   ADD . /project
   ```
 
-2. Create a Gemfile to install rails into our Docker environment
+2. Create a ```Gemfile``` to install rails into our Docker environment
   ```
   source 'https://rubygems.org'
   gem 'rails', '4.2.0'
   ```
 
-3. Create a Gemfile.lock
+3. Create a ```Gemfile.lock```
   ```
   touch Gemfile.lock
   ```
