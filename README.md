@@ -52,10 +52,17 @@
   
 5. Update config/database.yml
   ```
-  development: &default
-    username: postgres
-    password:
-    host: db
+default: &default
+adapter: postgresql
+encoding: unicode
+pool: 5
+
+development: &default
+database: postgres
+username: postgres
+password:
+host: db
+
   ```
   
 6. Build the image
