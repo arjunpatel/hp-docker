@@ -47,6 +47,7 @@
   ```
   docker-compose run web rails new . --force --database=postgresql --skip-bundle
   ```
+  
 5. Update config/database.yml
   ```
   development: &default
@@ -54,14 +55,17 @@
     password:
     host: db
   ```
+  
 6. Build the image
   ```
   docker-compose build
   ```
+  
 7. docker-compose up
   ```
   docker-compose up
   ```
+  
 8. Create the PostgreSQL database
   ```
   docker-compose run web rake db:create
