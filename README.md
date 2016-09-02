@@ -52,17 +52,17 @@
   
 5. Update config/database.yml
   ```
-default: &default
-adapter: postgresql
-encoding: unicode
-pool: 5
-
-development: &default
-database: postgres
-username: postgres
-password:
-host: db
-
+  default: &default
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
+    
+  development:
+    <<: *default
+    host: db
+    username: postgres
+    password:
+    database: myapp_development
   ```
   
 6. Build the image
